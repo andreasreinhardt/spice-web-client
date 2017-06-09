@@ -336,7 +336,7 @@ wdi.ClientGui = $.spcExtend(wdi.EventObject.prototype, {
 		var self = this;
 
 		var eventLayer = $('<canvas/>').css({
-			cursor: 'default',
+			cursor: 'none',
 			position: 'absolute'
 		}).attr({
 				id: event_id,

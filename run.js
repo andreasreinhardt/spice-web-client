@@ -208,8 +208,8 @@ function start () {
 	app.run({
 		'callback': f,
 		'context': this,
-		'host': getURLParameter('host') || '10.11.12.100',
-		'port': getURLParameter('port') || 8000,
+		'host': getURLParameter('host') || 'localhost',
+		'port': getURLParameter('port') || 6080,
 		'protocol': getURLParameter('protocol') || 'ws',
 		'token': '1q2w3e4r',
 		'vmHost': getURLParameter('vmhost') || false,
@@ -225,7 +225,7 @@ function start () {
         'heartbeatToken': 'heartbeat',
 		'heartbeatTimeout': 4000,//miliseconds
 		'busFileServerBaseUrl': 'https://10.11.12.200/fileserver/',
-		'layout': getURLParameter('layout') || 'es',
+		'layout': getURLParameter('layout') || 'de',
 		'clientOffset': {
 			'x': 0,
 			'y': 0
@@ -233,7 +233,7 @@ function start () {
 		'useWorkers': useWorkers,
 		'seamlessDesktopIntegration': false,
 		'externalClipboardHandling': false,
-		'disableClipboard': true,
+		'disableClipboard': false,
 		'layer': document.getElementById('testVdi'),
 		'vmInfoToken': getURLParameter('vmInfoToken')
 		//'language': navigator.language
