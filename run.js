@@ -208,7 +208,7 @@ function start () {
 	app.run({
 		'callback': f,
 		'context': this,
-		'host': getURLParameter('host') || document.location.host,
+		'host': getURLParameter('host') || document.location.hostname,
 		'port': getURLParameter('port') || 6080,
 		'protocol': getURLParameter('protocol') || 'ws',
 		'token': '1q2w3e4r',
